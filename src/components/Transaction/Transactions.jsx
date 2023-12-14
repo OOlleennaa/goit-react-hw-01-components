@@ -1,26 +1,28 @@
+import { TransactionMain, TransMainItems,TransactionTable,TransBodyTitle, TransBodyItems } from "./Transaction.styled";
+
 export const TransactionHistory = ({ items }) => {
     return (
-        <table class="transaction-history">
+        <TransactionTable>
   <thead>
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
-    </tr>
+    <TransactionMain>
+      <TransMainItems>Type</TransMainItems>
+      <TransMainItems>Amount</TransMainItems>
+      <TransMainItems>Currency</TransMainItems>
+    </TransactionMain>
   </thead>
 
   <tbody>
-    <tr>
-      <td>Invoice</td>
-      <td>125</td>
-      <td>USD</td>
-    </tr>
-    <tr>
-      <td>Withdrawal</td>
-      <td>85</td>
-      <td>USD</td>
-    </tr>
+    <TransBodyTitle>
+      <TransBodyItems>Invoice</TransBodyItems>
+      <TransBodyItems>125</TransBodyItems>
+      <TransBodyItems>USD</TransBodyItems>
+    </TransBodyTitle>
+    <TransBodyTitle>
+      <TransBodyItems>Withdrawal</TransBodyItems>
+      <TransBodyItems>85</TransBodyItems>
+      <TransBodyItems>USD</TransBodyItems>
+    </TransBodyTitle>
   </tbody>
-</table>
+</TransactionTable>
     );
 };

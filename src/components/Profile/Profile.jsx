@@ -1,35 +1,34 @@
-// import css from './Profile.module.css';
+import { ProfileWrapp, ProfileDescription,ProfileName, ProfileAvatar, ProfileTag, ProfileLocation, ProfileParam, ProfileParamItems, ProfileLabel, ProfileQuantity } from "./Profile.styled";
 // import PropTypes from 'prop-types';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
 
-<div class="profile">
-  <div class="description">
-    <img
+<ProfileWrapp>
+  <ProfileDescription>
+    <ProfileAvatar
       src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
       alt="User avatar"
-      class="avatar"
-    />
-    <p class="name">Petra Marica</p>
-    <p class="tag">@pmarica</p>
-    <p class="location">Salvador, Brasil</p>
-  </div>
+          />
+    <ProfileName>Petra Marica</ProfileName>
+    <ProfileTag>@pmarica</ProfileTag>
+    <ProfileLocation>Salvador, Brasil</ProfileLocation>
+  </ProfileDescription>
 
-  <ul class="stats">
-    <li>
-      <span class="label">Followers</span>
-      <span class="quantity">1000</span>
-    </li>
-    <li>
-      <span class="label">Views</span>
-      <span class="quantity">2000</span>
-    </li>
-    <li>
-      <span class="label">Likes</span>
-      <span class="quantity">3000</span>
-    </li>
-  </ul>
-</div>
+  <ProfileParam>
+    <ProfileParamItems>
+      <ProfileLabel>Followers</ProfileLabel>
+      <ProfileQuantity>1000</ProfileQuantity>
+    </ProfileParamItems>
+    <ProfileParamItems>
+      <ProfileLabel>Views</ProfileLabel>
+      <ProfileQuantity>2000</ProfileQuantity>
+    </ProfileParamItems>
+    <ProfileParamItems>
+      <ProfileLabel>Likes</ProfileLabel>
+      <ProfileQuantity>3000</ProfileQuantity >
+    </ProfileParamItems>
+  </ProfileParam>
+</ProfileWrapp>
   );
 };

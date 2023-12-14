@@ -1,26 +1,28 @@
+import { StatisticsMain, StatTitle, StatItem, StatList, StatLabel, StatPercentage } from "./Statistics.styled";
+
 export const Statistics = ({ title, stats }) => {
     return (
-        <section class="statistics">
-  <h2 class="title">Upload stats</h2>
+        <StatisticsMain>
+  <StatTitle>Upload stats</StatTitle>
 
-  <ul class="stat-list">
-    <li class="item">
-      <span class="label">.docx</span>
-      <span class="percentage">4%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp3</span>
-      <span class="percentage">14%</span>
-    </li>
-    <li class="item">
-      <span class="label">.pdf</span>
-      <span class="percentage">41%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp4</span>
-      <span class="percentage">12%</span>
-    </li>
-  </ul>
-</section>
+  <StatList>
+    <StatItem>
+      <StatLabel>.docx</StatLabel>
+      <StatPercentage>4%</StatPercentage>
+    </StatItem>
+    <StatItem>
+      <StatLabel>.mp3</StatLabel>
+      <StatPercentage>14%</StatPercentage>
+    </StatItem>
+    <StatItem>
+      <StatLabel>.pdf</StatLabel>
+      <StatPercentage>41%</StatPercentage>
+    </StatItem>
+    <StatItem>
+      <StatLabel>.mp4</StatLabel>
+      <StatPercentage>12%</StatPercentage>
+    </StatItem>
+  </StatList>
+</StatisticsMain>
     );
 };
