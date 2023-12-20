@@ -1,0 +1,22 @@
+import PropTypes from "prop-types";
+import { FriendsParam, FriendsStatus, FriendsPhoto, FriendsName } from "./Friends.styled";
+
+
+export const FriendListItem = ({id, isOnline, avatar, name}) => {
+    return (
+    
+      <FriendsParam key={id}>
+            <FriendsStatus>{isOnline}</FriendsStatus>
+            <FriendsPhoto src={avatar} alt={name} width="48" />{avatar}
+            <FriendsName >{name}</FriendsName> 
+         
+        </FriendsParam>  
+      );
+    }
+
+
+FriendListItem.propTypes = {
+  status: PropTypes.bool,
+  avatar: PropTypes.string,
+  name: PropTypes.string
+}
