@@ -7,7 +7,7 @@ export const FriendListItem = ({id, isOnline, avatar, name}) => {
     
       <FriendsParam key={id}>
             <FriendsStatus>{isOnline}</FriendsStatus>
-            <FriendsPhoto src={avatar} alt={name} width="48" />{avatar}
+            <FriendsPhoto src={avatar} alt={name} width="48" />
             <FriendsName >{name}</FriendsName> 
          
         </FriendsParam>  
