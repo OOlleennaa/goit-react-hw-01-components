@@ -12,6 +12,11 @@ width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-right: 20px;
+      display: block;
+    background-color: 
+    ${props => props.status === true ? `green` :
+               props.status === false ? `red` : ``} ;
+    
 `;
 
 export const FriendsPhoto = styled.img`
