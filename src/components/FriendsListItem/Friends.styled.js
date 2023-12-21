@@ -14,8 +14,7 @@ width: 30px;
   margin-right: 20px;
       display: block;
     background-color: 
-    ${props => props.status === true ? `green` :
-               props.status === false ? `red` : ``} ;
+    ${props => props.status ? "green" : "red"} ;
     
 `;
 
