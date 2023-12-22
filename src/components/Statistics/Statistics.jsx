@@ -3,7 +3,7 @@ import { StatisticsMain, StatTitle, StatItem, StatList, StatLabel, StatPercentag
 export const Statistics = ({ title, stats }) => {
     return (
         <StatisticsMain>
-  <StatTitle>Upload stats</StatTitle>
+  {title && <StatTitle>Upload stats</StatTitle>}
 
   <StatList>
     <StatItem>

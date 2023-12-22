@@ -12,7 +12,15 @@ export const TransactionHistory = ({ items }) => {
   </thead>
 
   <tbody>
-    <TransBodyTitle>
+  {items.map(({ id, type, amount, currency }) => {
+                    return (<TransactionMain key={id}>
+                            <TransBodyItems>{type}</TransBodyItems>
+                            <TransBodyItems>{amount}</TransBodyItems>
+                            <TransBodyItems>{currency}</TransBodyItems>
+                        </TransactionMain>)  
+                    })
+                }
+    {/* <TransBodyTitle>
       <TransBodyItems>Invoice</TransBodyItems>
       <TransBodyItems>125</TransBodyItems>
       <TransBodyItems>USD</TransBodyItems>
@@ -21,7 +29,7 @@ export const TransactionHistory = ({ items }) => {
       <TransBodyItems>Withdrawal</TransBodyItems>
       <TransBodyItems>85</TransBodyItems>
       <TransBodyItems>USD</TransBodyItems>
-    </TransBodyTitle>
+    </TransBodyTitle> */}
   </tbody>
 </TransactionTable>
     );

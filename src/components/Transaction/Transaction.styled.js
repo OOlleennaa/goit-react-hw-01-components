@@ -9,6 +9,8 @@ export const TransactionTable = styled.table`
   width: 370px;
   border-spacing: 0;
   color: #8d5fcb;
+  overflow: hidden;
+    text-transform: capitalize;
 `
 
 export const TransactionMain = styled.tr`
