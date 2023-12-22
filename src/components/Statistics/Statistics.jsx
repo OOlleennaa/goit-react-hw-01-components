@@ -6,7 +6,14 @@ export const Statistics = ({ title, stats }) => {
   {title && <StatTitle>Upload stats</StatTitle>}
 
   <StatList>
-    <StatItem>
+  {stats.map(({id,label,percentage}) => {
+                     return (<StatItem key={id} >
+                        <StatLabel>{label}</StatLabel>
+                        <StatPercentage>{percentage}%</StatPercentage>
+                    </StatItem>)  
+                 })
+                }
+    {/* <StatItem>
       <StatLabel>.docx</StatLabel>
       <StatPercentage>4%</StatPercentage>
     </StatItem>
@@ -21,7 +28,7 @@ export const Statistics = ({ title, stats }) => {
     <StatItem>
       <StatLabel>.mp4</StatLabel>
       <StatPercentage>12%</StatPercentage>
-    </StatItem>
+    </StatItem> */}
   </StatList>
 </StatisticsMain>
     );
