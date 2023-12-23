@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { FriendsParam, FriendsStatus, FriendsPhoto, FriendsName } from "./Friends.styled";
 
 

@@ -1,4 +1,4 @@
-import { TransactionMain, TransMainItems,TransactionTable,TransBodyTitle, TransBodyItems } from "./Transaction.styled";
+import { TransactionMain, TransMainItems,TransactionTable, TransBodyItems } from "./Transaction.styled";
 
 export const TransactionHistory = ({ items }) => {
     return (
